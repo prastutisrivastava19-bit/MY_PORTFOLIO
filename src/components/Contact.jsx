@@ -95,23 +95,29 @@ function Contact() {
 
           <div className="bg-white/5 border border-cyan-500/20 rounded-3xl p-10 backdrop-blur-lg shadow-[0_0_20px_rgba(34,211,238,0.15)]">
 
-            <form className="flex flex-col gap-6">
+            <form
+             action="https://formspree.io/f/mnjyorjq"
+              method="POST"
+            className="flex flex-col gap-6">
 
               <input
                 type="text"
-                placeholder="Your Name"
+                name="name"
+                placeholder="Your Name" required
                 className="bg-black/40 border border-gray-700 rounded-xl px-5 py-4 outline-none focus:border-cyan-400 transition"
               />
 
               <input
                 type="email"
-                placeholder="Your Email"
+                name="email"
+                placeholder="Your Email" required
                 className="bg-black/40 border border-gray-700 rounded-xl px-5 py-4 outline-none focus:border-cyan-400 transition"
               />
 
               <textarea
                 rows="6"
-                placeholder="Your Message"
+                name="message"
+                placeholder="Your Message" required
                 className="bg-black/40 border border-gray-700 rounded-xl px-5 py-4 outline-none focus:border-cyan-400 transition resize-none"
               ></textarea>
 
